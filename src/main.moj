@@ -1,0 +1,10 @@
+fn main():
+    print("Mojo-like-Elixir starting...")
+
+    # Process-style call
+    let pid = spawn_process("worker", 5)
+    print("Spawned process ID:", pid)
+
+    # Elixir-style pipe operations
+    let result = pipeline(10)
+    print("Pipeline result:", result)
